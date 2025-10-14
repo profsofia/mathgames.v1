@@ -13,10 +13,10 @@ CXXFLAGS = $(CXXINCS) "-g3" "-pipe" "-Wall" "-D_DEBUG"
 CFLAGS   = $(INCS) "-g3" "-pipe" "-Wall" "-D_DEBUG"
 WINDRESFLAGS = 
 RES      = mathgames_private.res
-OBJ      = main.o $(RES)
+OBJ      = main.o reportes.o usuarios.o menu.o $(RES)
 BIN      = mathgames.exe
-LINKOBJ  = "main.o" "mathgames_private.res"
-CLEANOBJ = "main.o" "mathgames_private.res" "mathgames.exe"
+LINKOBJ  = "main.o" "reportes.o" "usuarios.o" "menu.o" "mathgames_private.res"
+CLEANOBJ = "main.o" "reportes.o" "usuarios.o" "menu.o" "mathgames_private.res" "mathgames.exe"
 
 .PHONY: all all-before all-after clean clean-custom
 
@@ -29,8 +29,17 @@ mathgames.exe: $(OBJ)
 
 	$(CC) $(LINKOBJ) -o "mathgames.exe" $(LIBS)
 
-main.o: main.c
-	$(CC) -c "main.c" -o "main.o" $(CFLAGS)  -finput-charset=UTF-8 -fexec-charset=windows-1252
+main.o: main.c menu.h
+	$(CC) -c "main.c" -o "main.o" $(CFLAGS) 
+
+reportes.o: reportes.c reportes.h
+	$(CC) -c "reportes.c" -o "reportes.o" $(CFLAGS)  -finput-charset=UTF-8 -fexec-charset=windows-1252
+
+usuarios.o: usuarios.c usuarios.h
+	$(CC) -c "usuarios.c" -o "usuarios.o" $(CFLAGS)  -finput-charset=UTF-8 -fexec-charset=windows-1252
+
+menu.o: menu.c reportes.h usuarios.h menu.h
+	$(CC) -c "menu.c" -o "menu.o" $(CFLAGS) 
 
 mathgames_private.res: mathgames_private.rc 
 	$(WINDRES) -i "mathgames_private.rc" --input-format=rc -o "mathgames_private.res" -O coff $(WINDRESFLAGS) 

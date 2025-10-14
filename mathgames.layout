@@ -1,28 +1,8 @@
 [
     {
-        "caretX": 3,
-        "caretY": 459,
-        "filename": "C:/Users/sofia/OneDrive/Escritorio/c/mathgames/main.c",
-        "focused": false,
-        "isOpen": true,
-        "left": 0,
-        "order": 0,
-        "top": 8900
-    },
-    {
         "caretX": 1,
-        "caretY": 1,
-        "filename": "C:/Users/sofia/OneDrive/Escritorio/c/mathgames/reportes.c",
-        "focused": false,
-        "isOpen": true,
-        "left": 0,
-        "order": 3,
-        "top": 0
-    },
-    {
-        "caretX": 4,
-        "caretY": 17,
-        "filename": "C:/Users/sofia/OneDrive/Escritorio/c/mathgames/readme.md",
+        "caretY": 7,
+        "filename": "C:/Users/sofia/OneDrive/Escritorio/c/mathgames/main.c",
         "focused": false,
         "isOpen": false,
         "left": 0,
@@ -30,42 +10,66 @@
     },
     {
         "caretX": 1,
-        "caretY": 1,
-        "filename": "C:/Users/sofia/OneDrive/Escritorio/c/mathgames/usuarios.c",
+        "caretY": 8,
+        "filename": "C:/Users/sofia/OneDrive/Escritorio/c/mathgames/reportes.c",
         "focused": false,
-        "isOpen": true,
+        "isOpen": false,
         "left": 0,
-        "order": 2,
         "top": 0
     },
     {
-        "caretX": 1,
-        "caretY": 1,
-        "filename": "C:/Users/sofia/OneDrive/Escritorio/c/mathgames/menu.c",
-        "focused": false,
-        "isOpen": true,
-        "left": 0,
-        "order": 1,
-        "top": 0
-    },
-    {
-        "caretX": 1,
-        "caretY": 1,
-        "filename": "C:/Users/sofia/OneDrive/Escritorio/c/mathgames/usuarios.h",
-        "focused": false,
-        "isOpen": true,
-        "left": 0,
-        "order": 4,
-        "top": 0
-    },
-    {
-        "caretX": 1,
-        "caretY": 1,
-        "filename": "C:/Users/sofia/OneDrive/Escritorio/c/mathgames/menu.h",
+        "caretX": 59,
+        "caretY": 99,
+        "filename": "C:/Users/sofia/OneDrive/Escritorio/c/mathgames/readme.md",
         "focused": true,
         "isOpen": true,
         "left": 0,
-        "order": 5,
+        "order": 0,
+        "top": 1720
+    },
+    {
+        "caretX": 1,
+        "caretY": 8,
+        "filename": "C:/Users/sofia/OneDrive/Escritorio/c/mathgames/usuarios.c",
+        "focused": false,
+        "isOpen": false,
+        "left": 0,
+        "top": 0
+    },
+    {
+        "caretX": 7,
+        "caretY": 6,
+        "filename": "C:/Users/sofia/OneDrive/Escritorio/c/mathgames/reportes.h",
+        "focused": false,
+        "isOpen": false,
+        "left": 0,
+        "top": 0
+    },
+    {
+        "caretX": 1,
+        "caretY": 46,
+        "filename": "C:/Users/sofia/OneDrive/Escritorio/c/mathgames/menu.c",
+        "focused": false,
+        "isOpen": false,
+        "left": 0,
+        "top": 60
+    },
+    {
+        "caretX": 1,
+        "caretY": 5,
+        "filename": "C:/Users/sofia/OneDrive/Escritorio/c/mathgames/usuarios.h",
+        "focused": false,
+        "isOpen": false,
+        "left": 0,
+        "top": 0
+    },
+    {
+        "caretX": 1,
+        "caretY": 5,
+        "filename": "C:/Users/sofia/OneDrive/Escritorio/c/mathgames/menu.h",
+        "focused": false,
+        "isOpen": false,
+        "left": 0,
         "top": 0
     }
 ]

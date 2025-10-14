@@ -82,29 +82,21 @@ Se manejan condicionales con `#ifdef _WIN32` para adaptar las funciones de:
 
 ---
 
-##  Compilación
+## Compilación y ejecución
 
-### En Windows
-Compilar con:
+El programa está dividido en varios módulos (`main`, `menu`, `usuarios`, `reportes`), por lo que deben compilarse todos juntos.
+
+###  Compilación
+
+Desde la terminal, ubicarse en la carpeta del proyecto y ejecutar:
+
+#### En Linux o macOS:
 ```bash
-gcc main.c -o mathgames.exe
+gcc main.c menu.c usuarios.c reportes.c -o app
 
-
-Ejecutar con:
-
-mathgames.exe
-
-En Linux / macOS
-
-Compilar con:
-
-gcc main.c -o mathgames
-
-
-Ejecutar con:
-
-./mathgames
-
+#### En Windows
+gcc main.c menu.c usuarios.c reportes.c -o app.exe
+-----------------------------------------------------------------------------
 Conceptos técnicos utilizados
 
 E/S no bloqueante: permite detectar teclas sin detener el flujo del programa.
