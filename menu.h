@@ -1,6 +1,9 @@
 #ifndef MENU_H
 #define MENU_H
 
-void mostrarMenuPrincipal();
+#include "compat.h"
+
+// Prototipos de funciones del menú
+void menu_principal(char *nombre);
 
 #endif

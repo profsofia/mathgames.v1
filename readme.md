@@ -84,7 +84,7 @@ Se manejan condicionales con `#ifdef _WIN32` para adaptar las funciones de:
 
 ## Compilación y ejecución
 
-El programa está dividido en varios módulos (`main`, `menu`, `usuarios`, `reportes`), por lo que deben compilarse todos juntos.
+El programa está dividido en varios módulos (`main`, `menu`, `juegos`), por lo que deben compilarse todos juntos.
 
 ###  Compilación
 
@@ -92,10 +92,10 @@ Desde la terminal, ubicarse en la carpeta del proyecto y ejecutar:
 
 #### En Linux o macOS:
 ```bash
-gcc main.c menu.c usuarios.c reportes.c -o app
+gcc main.c menu.c juegos.c -o app
 
 #### En Windows
-gcc main.c menu.c usuarios.c reportes.c -o app.exe
+gcc main.c menu.c juegos.c -o app.exe
 -----------------------------------------------------------------------------
 Conceptos técnicos utilizados
 

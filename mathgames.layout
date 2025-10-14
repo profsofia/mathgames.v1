@@ -1,7 +1,7 @@
 [
     {
-        "caretX": 1,
-        "caretY": 7,
+        "caretX": 13,
+        "caretY": 1,
         "filename": "C:/Users/sofia/OneDrive/Escritorio/c/mathgames/main.c",
         "focused": false,
         "isOpen": false,
@@ -9,28 +9,73 @@
         "top": 0
     },
     {
-        "caretX": 1,
-        "caretY": 8,
-        "filename": "C:/Users/sofia/OneDrive/Escritorio/c/mathgames/reportes.c",
+        "caretX": 12,
+        "caretY": 1,
+        "filename": "C:/Users/sofia/OneDrive/Escritorio/c/mathgames/utils.c",
         "focused": false,
         "isOpen": false,
         "left": 0,
         "top": 0
     },
     {
-        "caretX": 59,
-        "caretY": 99,
+        "caretX": 69,
+        "caretY": 87,
         "filename": "C:/Users/sofia/OneDrive/Escritorio/c/mathgames/readme.md",
+        "focused": false,
+        "isOpen": false,
+        "left": 0,
+        "top": 1420
+    },
+    {
+        "caretX": 12,
+        "caretY": 1,
+        "filename": "C:/Users/sofia/OneDrive/Escritorio/c/mathgames/escribir_con_tiempo.c",
+        "focused": false,
+        "isOpen": false,
+        "left": 0,
+        "top": 0
+    },
+    {
+        "caretX": 12,
+        "caretY": 1,
+        "filename": "C:/Users/sofia/OneDrive/Escritorio/c/mathgames/compat.c",
+        "focused": false,
+        "isOpen": false,
+        "left": 0,
+        "top": 0
+    },
+    {
+        "caretX": 12,
+        "caretY": 1,
+        "filename": "C:/Users/sofia/OneDrive/Escritorio/c/mathgames/math_fast.c",
+        "focused": false,
+        "isOpen": false,
+        "left": 0,
+        "top": 0
+    },
+    {
+        "caretX": 2,
+        "caretY": 4,
+        "filename": "C:/Users/sofia/OneDrive/Escritorio/c/mathgames/menu.c",
+        "focused": false,
+        "isOpen": false,
+        "left": 0,
+        "top": 0
+    },
+    {
+        "caretX": 12,
+        "caretY": 1,
+        "filename": "C:/Users/sofia/OneDrive/Escritorio/c/mathgames/math_jump.c",
         "focused": true,
         "isOpen": true,
         "left": 0,
         "order": 0,
-        "top": 1720
+        "top": 0
     },
     {
-        "caretX": 1,
-        "caretY": 8,
-        "filename": "C:/Users/sofia/OneDrive/Escritorio/c/mathgames/usuarios.c",
+        "caretX": 7,
+        "caretY": 10,
+        "filename": "C:/Users/sofia/OneDrive/Escritorio/c/mathgames/utils.h",
         "focused": false,
         "isOpen": false,
         "left": 0,
@@ -38,35 +83,35 @@
     },
     {
         "caretX": 7,
-        "caretY": 6,
-        "filename": "C:/Users/sofia/OneDrive/Escritorio/c/mathgames/reportes.h",
-        "focused": false,
-        "isOpen": false,
-        "left": 0,
-        "top": 0
-    },
-    {
-        "caretX": 1,
-        "caretY": 46,
-        "filename": "C:/Users/sofia/OneDrive/Escritorio/c/mathgames/menu.c",
-        "focused": false,
-        "isOpen": false,
-        "left": 0,
-        "top": 60
-    },
-    {
-        "caretX": 1,
-        "caretY": 5,
-        "filename": "C:/Users/sofia/OneDrive/Escritorio/c/mathgames/usuarios.h",
-        "focused": false,
-        "isOpen": false,
-        "left": 0,
-        "top": 0
-    },
-    {
-        "caretX": 1,
-        "caretY": 5,
+        "caretY": 9,
         "filename": "C:/Users/sofia/OneDrive/Escritorio/c/mathgames/menu.h",
+        "focused": false,
+        "isOpen": false,
+        "left": 0,
+        "top": 0
+    },
+    {
+        "caretX": 7,
+        "caretY": 29,
+        "filename": "C:/Users/sofia/OneDrive/Escritorio/c/mathgames/compat.h",
+        "focused": false,
+        "isOpen": false,
+        "left": 0,
+        "top": 100
+    },
+    {
+        "caretX": 12,
+        "caretY": 1,
+        "filename": "C:/Users/sofia/OneDrive/Escritorio/c/mathgames/math_run.c",
+        "focused": false,
+        "isOpen": false,
+        "left": 0,
+        "top": 0
+    },
+    {
+        "caretX": 7,
+        "caretY": 12,
+        "filename": "C:/Users/sofia/OneDrive/Escritorio/c/mathgames/juegos.h",
         "focused": false,
         "isOpen": false,
         "left": 0,

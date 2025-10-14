@@ -1,7 +1,7 @@
 [Project]
 filename = mathgames.dev
 name = mathgames
-UnitCount = 8
+UnitCount = 13
 Type = 1
 Ver = 3
 Includes = 
@@ -77,7 +77,7 @@ SyncProduct = 1
 
 
 [Unit2]
-FileName = reportes.c
+FileName = utils.c
 Folder = Sources
 Compile = 1
 Link = 1
@@ -85,7 +85,7 @@ Priority = 1000
 OverrideBuildCmd = 0
 BuildCmd = 
 FileEncoding = PROJECT
-RealEncoding = UTF-8
+RealEncoding = 
 CompileCpp = 0
 
 
@@ -103,7 +103,7 @@ RealEncoding = UTF-8
 
 
 [Unit4]
-FileName = usuarios.c
+FileName = escribir_con_tiempo.c
 CompileCpp = 0
 Folder = Sources
 Compile = 1
@@ -116,19 +116,32 @@ RealEncoding = UTF-8
 
 
 [Unit5]
-FileName = reportes.h
+FileName = compat.c
 CompileCpp = 0
-Folder = Headers
-Compile = 0
-Link = 0
+Folder = Sources
+Compile = 1
+Link = 1
 Priority = 1000
 OverrideBuildCmd = 0
 BuildCmd = 
 FileEncoding = PROJECT
-RealEncoding = 
+RealEncoding = UTF-8
 
 
 [Unit6]
+FileName = math_fast.c
+CompileCpp = 0
+Folder = Sources
+Compile = 1
+Link = 1
+Priority = 1000
+OverrideBuildCmd = 0
+BuildCmd = 
+FileEncoding = PROJECT
+RealEncoding = ASCII
+
+
+[Unit7]
 FileName = menu.c
 CompileCpp = 0
 Folder = Sources
@@ -141,8 +154,21 @@ FileEncoding = PROJECT
 RealEncoding = UTF-8
 
 
-[Unit7]
-FileName = usuarios.h
+[Unit8]
+FileName = math_jump.c
+CompileCpp = 0
+Folder = Sources
+Compile = 1
+Link = 1
+Priority = 1000
+OverrideBuildCmd = 0
+BuildCmd = 
+FileEncoding = PROJECT
+RealEncoding = ASCII
+
+
+[Unit9]
+FileName = utils.h
 CompileCpp = 0
 Folder = Headers
 Compile = 0
@@ -151,10 +177,10 @@ Priority = 1000
 OverrideBuildCmd = 0
 BuildCmd = 
 FileEncoding = PROJECT
-RealEncoding = UTF-8
+RealEncoding = ASCII
 
 
-[Unit8]
+[Unit10]
 FileName = menu.h
 CompileCpp = 0
 Folder = Headers
@@ -165,6 +191,45 @@ OverrideBuildCmd = 0
 BuildCmd = 
 FileEncoding = PROJECT
 RealEncoding = UTF-8
+
+
+[Unit11]
+FileName = compat.h
+CompileCpp = 0
+Folder = Headers
+Compile = 0
+Link = 0
+Priority = 1000
+OverrideBuildCmd = 0
+BuildCmd = 
+FileEncoding = PROJECT
+RealEncoding = ASCII
+
+
+[Unit12]
+FileName = math_run.c
+CompileCpp = 0
+Folder = Sources
+Compile = 1
+Link = 1
+Priority = 1000
+OverrideBuildCmd = 0
+BuildCmd = 
+FileEncoding = PROJECT
+RealEncoding = ASCII
+
+
+[Unit13]
+FileName = juegos.h
+CompileCpp = 0
+Folder = Headers
+Compile = 0
+Link = 0
+Priority = 1000
+OverrideBuildCmd = 0
+BuildCmd = 
+FileEncoding = PROJECT
+RealEncoding = ASCII
 
 
 [CompilerSettings]

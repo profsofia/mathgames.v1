@@ -13,10 +13,10 @@ CXXFLAGS = $(CXXINCS) "-g3" "-pipe" "-Wall" "-D_DEBUG"
 CFLAGS   = $(INCS) "-g3" "-pipe" "-Wall" "-D_DEBUG"
 WINDRESFLAGS = 
 RES      = mathgames_private.res
-OBJ      = main.o reportes.o usuarios.o menu.o $(RES)
+OBJ      = main.o utils.o escribir_con_tiempo.o compat.o math_fast.o menu.o math_jump.o math_run.o $(RES)
 BIN      = mathgames.exe
-LINKOBJ  = "main.o" "reportes.o" "usuarios.o" "menu.o" "mathgames_private.res"
-CLEANOBJ = "main.o" "reportes.o" "usuarios.o" "menu.o" "mathgames_private.res" "mathgames.exe"
+LINKOBJ  = "main.o" "utils.o" "escribir_con_tiempo.o" "compat.o" "math_fast.o" "menu.o" "math_jump.o" "math_run.o" "mathgames_private.res"
+CLEANOBJ = "main.o" "utils.o" "escribir_con_tiempo.o" "compat.o" "math_fast.o" "menu.o" "math_jump.o" "math_run.o" "mathgames_private.res" "mathgames.exe"
 
 .PHONY: all all-before all-after clean clean-custom
 
@@ -29,17 +29,29 @@ mathgames.exe: $(OBJ)
 
 	$(CC) $(LINKOBJ) -o "mathgames.exe" $(LIBS)
 
-main.o: main.c menu.h
-	$(CC) -c "main.c" -o "main.o" $(CFLAGS) 
+main.o: main.c utils.h menu.h compat.h juegos.h
+	$(CC) -c "main.c" -o "main.o" $(CFLAGS)  -finput-charset=UTF-8 -fexec-charset=windows-1252
 
-reportes.o: reportes.c reportes.h
-	$(CC) -c "reportes.c" -o "reportes.o" $(CFLAGS)  -finput-charset=UTF-8 -fexec-charset=windows-1252
+utils.o: utils.c utils.h compat.h
+	$(CC) -c "utils.c" -o "utils.o" $(CFLAGS) 
 
-usuarios.o: usuarios.c usuarios.h
-	$(CC) -c "usuarios.c" -o "usuarios.o" $(CFLAGS)  -finput-charset=UTF-8 -fexec-charset=windows-1252
+escribir_con_tiempo.o: escribir_con_tiempo.c compat.h juegos.h
+	$(CC) -c "escribir_con_tiempo.c" -o "escribir_con_tiempo.o" $(CFLAGS)  -finput-charset=UTF-8 -fexec-charset=windows-1252
 
-menu.o: menu.c reportes.h usuarios.h menu.h
-	$(CC) -c "menu.c" -o "menu.o" $(CFLAGS) 
+compat.o: compat.c compat.h
+	$(CC) -c "compat.c" -o "compat.o" $(CFLAGS)  -finput-charset=UTF-8 -fexec-charset=windows-1252
+
+math_fast.o: math_fast.c compat.h juegos.h
+	$(CC) -c "math_fast.c" -o "math_fast.o" $(CFLAGS) 
+
+menu.o: menu.c menu.h compat.h
+	$(CC) -c "menu.c" -o "menu.o" $(CFLAGS)  -finput-charset=UTF-8 -fexec-charset=windows-1252
+
+math_jump.o: math_jump.c compat.h juegos.h
+	$(CC) -c "math_jump.c" -o "math_jump.o" $(CFLAGS) 
+
+math_run.o: math_run.c compat.h juegos.h
+	$(CC) -c "math_run.c" -o "math_run.o" $(CFLAGS) 
 
 mathgames_private.res: mathgames_private.rc 
 	$(WINDRES) -i "mathgames_private.rc" --input-format=rc -o "mathgames_private.res" -O coff $(WINDRESFLAGS) 
