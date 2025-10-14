@@ -1,0 +1,16 @@
+ 
+# Archivos ejecutables
+*.exe
+math_games
+
+# Archivos objeto
+*.o
+*.obj
+
+# Archivos temporales
+*~
+*.swp
+Thumbs.db
+
+# Directorios de build
+build/
