@@ -38,7 +38,7 @@ math_jump.o: math_jump.c juegos.h compat.h
 main.o: main.c score.h menu.h utils.h juegos.h compat.h
 	$(CC) -c "main.c" -o "main.o" $(CFLAGS)  -finput-charset=UTF-8 -fexec-charset=windows-1252
 
-menu.o: menu.c menu.h compat.h
+menu.o: menu.c menu.h utils.h compat.h
 	$(CC) -c "menu.c" -o "menu.o" $(CFLAGS)  -finput-charset=UTF-8 -fexec-charset=windows-1252
 
 compat.o: compat.c compat.h

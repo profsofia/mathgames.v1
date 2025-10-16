@@ -1,1 +1,6 @@
 sofia 39
+sofia 52
+luis 38
+carlos 69
+juana 37
+jamaica 4

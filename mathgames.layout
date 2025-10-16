@@ -19,11 +19,12 @@
     },
     {
         "caretX": 7,
-        "caretY": 10,
+        "caretY": 19,
         "filename": "C:/Users/sofia/OneDrive/Escritorio/c/mathgames/utils.h",
         "focused": false,
-        "isOpen": false,
+        "isOpen": true,
         "left": 0,
+        "order": 0,
         "top": 0
     },
     {
@@ -45,14 +46,14 @@
         "top": 0
     },
     {
-        "caretX": 2,
-        "caretY": 133,
+        "caretX": 5,
+        "caretY": 92,
         "filename": "C:/Users/sofia/OneDrive/Escritorio/c/mathgames/main.c",
-        "focused": false,
+        "focused": true,
         "isOpen": true,
         "left": 0,
-        "order": 0,
-        "top": 2440
+        "order": 2,
+        "top": 0
     },
     {
         "caretX": 7,
@@ -64,12 +65,13 @@
         "top": 0
     },
     {
-        "caretX": 2,
-        "caretY": 1,
+        "caretX": 19,
+        "caretY": 8,
         "filename": "C:/Users/sofia/OneDrive/Escritorio/c/mathgames/menu.c",
         "focused": false,
-        "isOpen": false,
+        "isOpen": true,
         "left": 0,
+        "order": 1,
         "top": 0
     },
     {
@@ -127,13 +129,12 @@
         "top": 0
     },
     {
-        "caretX": 2,
-        "caretY": 104,
+        "caretX": 31,
+        "caretY": 103,
         "filename": "C:/Users/sofia/OneDrive/Escritorio/c/mathgames/score.c",
-        "focused": true,
-        "isOpen": true,
+        "focused": false,
+        "isOpen": false,
         "left": 0,
-        "order": 1,
-        "top": 1660
+        "top": 0
     }
 ]

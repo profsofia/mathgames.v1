@@ -90,14 +90,15 @@ int main(void)
 				math_jump(resultado_total); // Esta función actualiza 'total'
 				escribir_con_tiempo(total);
 				
-				// *******************************************
-				// NUEVA LÍNEA: Guardar el puntaje final
-				// *******************************************
 				if (total > 0) {
 					save_score_to_file(nombre, total);
-					printf("\n¡Puntaje %d guardado en el historial de scores!\n", total);
+					// Usamos color cian para el mensaje de éxito
+					printf("\n%s¡Puntaje %d guardado en el historial de scores!%s\n", 
+						   ANSI_COLOR_CYAN, total, ANSI_COLOR_RESET);
 				} else {
-					printf("\nNo se guarda el puntaje (es 0 o menos).\n");
+					// Usamos color rojo para el mensaje de error/puntuación nula
+					printf("\n%sNo se guarda el puntaje (es 0 o menos).%s\n", 
+						   ANSI_COLOR_RED, ANSI_COLOR_RESET);
 				}
 				// *******************************************
 			}
