@@ -1,44 +1,26 @@
 [
     {
-        "caretX": 13,
-        "caretY": 1,
-        "filename": "C:/Users/sofia/OneDrive/Escritorio/c/mathgames/main.c",
+        "caretX": 1,
+        "caretY": 19,
+        "filename": "C:/Users/sofia/OneDrive/Escritorio/c/mathgames/score.h",
+        "focused": false,
+        "isOpen": false,
+        "left": 0,
+        "top": 60
+    },
+    {
+        "caretX": 7,
+        "caretY": 9,
+        "filename": "C:/Users/sofia/OneDrive/Escritorio/c/mathgames/menu.h",
         "focused": false,
         "isOpen": false,
         "left": 0,
         "top": 0
     },
     {
-        "caretX": 12,
-        "caretY": 1,
-        "filename": "C:/Users/sofia/OneDrive/Escritorio/c/mathgames/utils.c",
-        "focused": false,
-        "isOpen": false,
-        "left": 0,
-        "top": 0
-    },
-    {
-        "caretX": 69,
-        "caretY": 87,
-        "filename": "C:/Users/sofia/OneDrive/Escritorio/c/mathgames/readme.md",
-        "focused": false,
-        "isOpen": false,
-        "left": 0,
-        "top": 1420
-    },
-    {
-        "caretX": 12,
-        "caretY": 1,
-        "filename": "C:/Users/sofia/OneDrive/Escritorio/c/mathgames/escribir_con_tiempo.c",
-        "focused": false,
-        "isOpen": false,
-        "left": 0,
-        "top": 0
-    },
-    {
-        "caretX": 12,
-        "caretY": 1,
-        "filename": "C:/Users/sofia/OneDrive/Escritorio/c/mathgames/compat.c",
+        "caretX": 7,
+        "caretY": 10,
+        "filename": "C:/Users/sofia/OneDrive/Escritorio/c/mathgames/utils.h",
         "focused": false,
         "isOpen": false,
         "left": 0,
@@ -54,8 +36,36 @@
         "top": 0
     },
     {
+        "caretX": 12,
+        "caretY": 1,
+        "filename": "C:/Users/sofia/OneDrive/Escritorio/c/mathgames/math_jump.c",
+        "focused": false,
+        "isOpen": false,
+        "left": 0,
+        "top": 0
+    },
+    {
         "caretX": 2,
-        "caretY": 4,
+        "caretY": 133,
+        "filename": "C:/Users/sofia/OneDrive/Escritorio/c/mathgames/main.c",
+        "focused": false,
+        "isOpen": true,
+        "left": 0,
+        "order": 0,
+        "top": 2440
+    },
+    {
+        "caretX": 7,
+        "caretY": 12,
+        "filename": "C:/Users/sofia/OneDrive/Escritorio/c/mathgames/juegos.h",
+        "focused": false,
+        "isOpen": false,
+        "left": 0,
+        "top": 0
+    },
+    {
+        "caretX": 2,
+        "caretY": 1,
         "filename": "C:/Users/sofia/OneDrive/Escritorio/c/mathgames/menu.c",
         "focused": false,
         "isOpen": false,
@@ -63,32 +73,40 @@
         "top": 0
     },
     {
+        "caretX": 24,
+        "caretY": 23,
+        "filename": "C:/Users/sofia/OneDrive/Escritorio/c/mathgames/compat.c",
+        "focused": false,
+        "isOpen": false,
+        "left": 0,
+        "top": 60
+    },
+    {
         "caretX": 12,
         "caretY": 1,
-        "filename": "C:/Users/sofia/OneDrive/Escritorio/c/mathgames/math_jump.c",
-        "focused": true,
-        "isOpen": true,
-        "left": 0,
-        "order": 0,
-        "top": 0
-    },
-    {
-        "caretX": 7,
-        "caretY": 10,
-        "filename": "C:/Users/sofia/OneDrive/Escritorio/c/mathgames/utils.h",
+        "filename": "C:/Users/sofia/OneDrive/Escritorio/c/mathgames/utils.c",
         "focused": false,
         "isOpen": false,
         "left": 0,
         "top": 0
     },
     {
-        "caretX": 7,
-        "caretY": 9,
-        "filename": "C:/Users/sofia/OneDrive/Escritorio/c/mathgames/menu.h",
+        "caretX": 1,
+        "caretY": 4,
+        "filename": "C:/Users/sofia/OneDrive/Escritorio/c/mathgames/escribir_con_tiempo.c",
         "focused": false,
         "isOpen": false,
         "left": 0,
         "top": 0
+    },
+    {
+        "caretX": 49,
+        "caretY": 151,
+        "filename": "C:/Users/sofia/OneDrive/Escritorio/c/mathgames/readme.md",
+        "focused": false,
+        "isOpen": false,
+        "left": 0,
+        "top": 2620
     },
     {
         "caretX": 7,
@@ -109,12 +127,13 @@
         "top": 0
     },
     {
-        "caretX": 7,
-        "caretY": 12,
-        "filename": "C:/Users/sofia/OneDrive/Escritorio/c/mathgames/juegos.h",
-        "focused": false,
-        "isOpen": false,
+        "caretX": 2,
+        "caretY": 104,
+        "filename": "C:/Users/sofia/OneDrive/Escritorio/c/mathgames/score.c",
+        "focused": true,
+        "isOpen": true,
         "left": 0,
-        "top": 0
+        "order": 1,
+        "top": 1660
     }
 ]

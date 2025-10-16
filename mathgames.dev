@@ -1,7 +1,7 @@
 [Project]
 filename = mathgames.dev
 name = mathgames
-UnitCount = 13
+UnitCount = 16
 Type = 1
 Ver = 3
 Includes = 
@@ -44,16 +44,16 @@ UseUTF8 = 1
 
 
 [Unit1]
-FileName = main.c
+FileName = score.h
 CompileCpp = 0
-Folder = Sources
-Compile = 1
-Link = 1
+Folder = Headers
+Compile = 0
+Link = 0
 Priority = 1000
 OverrideBuildCmd = 0
 BuildCmd = 
 FileEncoding = PROJECT
-RealEncoding = UTF-8
+RealEncoding = ASCII
 
 
 [VersionInfo]
@@ -64,35 +64,21 @@ Build = 0
 LanguageID = 1033
 CharsetID = 1252
 CompanyName = 
-FileVersion = 
+FileVersion = 0.1
 FileDescription = Developed using the Red Panda C++ IDE
 InternalName = 
 LegalCopyright = 
 LegalTrademarks = 
-OriginalFilename = 
-ProductName = 
-ProductVersion = 
+OriginalFilename = mathgames.exe
+ProductName = mathgames
+ProductVersion = 0.1.1.1
 AutoIncBuildNr = 0
 SyncProduct = 1
 
 
 [Unit2]
-FileName = utils.c
-Folder = Sources
-Compile = 1
-Link = 1
-Priority = 1000
-OverrideBuildCmd = 0
-BuildCmd = 
-FileEncoding = PROJECT
-RealEncoding = 
-CompileCpp = 0
-
-
-[Unit3]
-FileName = readme.md
-CompileCpp = 0
-Folder = Others
+FileName = menu.h
+Folder = Headers
 Compile = 0
 Link = 0
 Priority = 1000
@@ -100,74 +86,10 @@ OverrideBuildCmd = 0
 BuildCmd = 
 FileEncoding = PROJECT
 RealEncoding = UTF-8
-
-
-[Unit4]
-FileName = escribir_con_tiempo.c
 CompileCpp = 0
-Folder = Sources
-Compile = 1
-Link = 1
-Priority = 1000
-OverrideBuildCmd = 0
-BuildCmd = 
-FileEncoding = PROJECT
-RealEncoding = UTF-8
 
 
-[Unit5]
-FileName = compat.c
-CompileCpp = 0
-Folder = Sources
-Compile = 1
-Link = 1
-Priority = 1000
-OverrideBuildCmd = 0
-BuildCmd = 
-FileEncoding = PROJECT
-RealEncoding = UTF-8
-
-
-[Unit6]
-FileName = math_fast.c
-CompileCpp = 0
-Folder = Sources
-Compile = 1
-Link = 1
-Priority = 1000
-OverrideBuildCmd = 0
-BuildCmd = 
-FileEncoding = PROJECT
-RealEncoding = ASCII
-
-
-[Unit7]
-FileName = menu.c
-CompileCpp = 0
-Folder = Sources
-Compile = 1
-Link = 1
-Priority = 1000
-OverrideBuildCmd = 0
-BuildCmd = 
-FileEncoding = PROJECT
-RealEncoding = UTF-8
-
-
-[Unit8]
-FileName = math_jump.c
-CompileCpp = 0
-Folder = Sources
-Compile = 1
-Link = 1
-Priority = 1000
-OverrideBuildCmd = 0
-BuildCmd = 
-FileEncoding = PROJECT
-RealEncoding = ASCII
-
-
-[Unit9]
+[Unit3]
 FileName = utils.h
 CompileCpp = 0
 Folder = Headers
@@ -180,10 +102,127 @@ FileEncoding = PROJECT
 RealEncoding = ASCII
 
 
-[Unit10]
-FileName = menu.h
+[Unit4]
+FileName = math_fast.c
+CompileCpp = 0
+Folder = Sources
+Compile = 1
+Link = 1
+Priority = 1000
+OverrideBuildCmd = 0
+BuildCmd = 
+FileEncoding = PROJECT
+RealEncoding = ASCII
+
+
+[Unit5]
+FileName = math_jump.c
+CompileCpp = 0
+Folder = Sources
+Compile = 1
+Link = 1
+Priority = 1000
+OverrideBuildCmd = 0
+BuildCmd = 
+FileEncoding = PROJECT
+RealEncoding = ASCII
+
+
+[Unit6]
+FileName = main.c
+CompileCpp = 0
+Folder = Sources
+Compile = 1
+Link = 1
+Priority = 1000
+OverrideBuildCmd = 0
+BuildCmd = 
+FileEncoding = PROJECT
+RealEncoding = UTF-8
+
+
+[Unit7]
+FileName = juegos.h
 CompileCpp = 0
 Folder = Headers
+Compile = 0
+Link = 0
+Priority = 1000
+OverrideBuildCmd = 0
+BuildCmd = 
+FileEncoding = PROJECT
+RealEncoding = ASCII
+
+
+[Unit8]
+FileName = .gitignore
+CompileCpp = 0
+Folder = Others
+Compile = 0
+Link = 0
+Priority = 1000
+OverrideBuildCmd = 0
+BuildCmd = 
+FileEncoding = PROJECT
+RealEncoding = ASCII
+
+
+[Unit9]
+FileName = menu.c
+CompileCpp = 0
+Folder = Sources
+Compile = 1
+Link = 1
+Priority = 1000
+OverrideBuildCmd = 0
+BuildCmd = 
+FileEncoding = PROJECT
+RealEncoding = UTF-8
+
+
+[Unit10]
+FileName = compat.c
+CompileCpp = 0
+Folder = Sources
+Compile = 1
+Link = 1
+Priority = 1000
+OverrideBuildCmd = 0
+BuildCmd = 
+FileEncoding = PROJECT
+RealEncoding = UTF-8
+
+
+[Unit11]
+FileName = utils.c
+CompileCpp = 0
+Folder = Sources
+Compile = 1
+Link = 1
+Priority = 1000
+OverrideBuildCmd = 0
+BuildCmd = 
+FileEncoding = PROJECT
+RealEncoding = ASCII
+
+
+[Unit12]
+FileName = escribir_con_tiempo.c
+CompileCpp = 0
+Folder = Sources
+Compile = 1
+Link = 1
+Priority = 1000
+OverrideBuildCmd = 0
+BuildCmd = 
+FileEncoding = PROJECT
+RealEncoding = UTF-8
+
+
+[Unit13]
+FileName = readme.md
+CompileCpp = 0
+Folder = Others
 Compile = 0
 Link = 0
 Priority = 1000
@@ -193,7 +232,7 @@ FileEncoding = PROJECT
 RealEncoding = UTF-8
 
 
-[Unit11]
+[Unit14]
 FileName = compat.h
 CompileCpp = 0
 Folder = Headers
@@ -206,7 +245,7 @@ FileEncoding = PROJECT
 RealEncoding = ASCII
 
 
-[Unit12]
+[Unit15]
 FileName = math_run.c
 CompileCpp = 0
 Folder = Sources
@@ -219,17 +258,17 @@ FileEncoding = PROJECT
 RealEncoding = ASCII
 
 
-[Unit13]
-FileName = juegos.h
+[Unit16]
+FileName = score.c
 CompileCpp = 0
-Folder = Headers
-Compile = 0
-Link = 0
+Folder = Sources
+Compile = 1
+Link = 1
 Priority = 1000
 OverrideBuildCmd = 0
 BuildCmd = 
 FileEncoding = PROJECT
-RealEncoding = ASCII
+RealEncoding = 
 
 
 [CompilerSettings]

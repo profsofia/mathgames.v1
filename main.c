@@ -1,6 +1,11 @@
+// main.c (inicio)
+
 #include "./menu.h"
 #include "./juegos.h"
 #include "./utils.h"
+#include "./score.h" 
+
+
 
 int main(void)
 {
@@ -9,19 +14,35 @@ int main(void)
 	
 	short total = 0;
 	short *resultado_total = &total;
-	char tecla_presionada;
+	//char tecla_presionada;
+	char tecla_presionada = '\0';
+	
+
 	char nombre_jugador[21];
 	char *nombre = nombre_jugador;
 	
-	printf("Ingrese su nombre, jugador (20 caracteres max)\n");
-	printf("--> ");
-	scanf(" %20[^ÁÉÍÓÚáéíóú\n]s", nombre_jugador);
-	nombre = nombre_jugador;
+	printf("==========================================\n");
+	printf("         ¡BIENVENIDO A MATH GAMES!        \n");
+	printf("==========================================\n");
+	printf("Ingresá tu nombre de usuario (20 caracteres max): ");
+
+
+	if (fgets(nombre_jugador, sizeof(nombre_jugador), stdin) != NULL) {
+		// Eliminar el salto de línea que agrega fgets 
+		nombre_jugador[strcspn(nombre_jugador, "\n")] = 0;
+	} else {
+		// Manejo de error si no se pudo leer el nombre
+		strcpy(nombre_jugador, "Jugador_Anonimo");
+	}
+
 	
 	do
 	{
 		menu_principal(nombre);
 		tecla_presionada = leer_tecla();
+		if (tecla_presionada == '\n') {
+			tecla_presionada = leer_tecla();
+		}
 		
 		switch(tecla_presionada)
 		{
@@ -61,10 +82,24 @@ int main(void)
 			{
 				break;
 			}
+			// main.c (dentro de case '2')
+			
+
 			else if (tecla_presionada == '\n') {
 				system(CLEAR);
-				math_jump(resultado_total);
+				math_jump(resultado_total); // Esta función actualiza 'total'
 				escribir_con_tiempo(total);
+				
+				// *******************************************
+				// NUEVA LÍNEA: Guardar el puntaje final
+				// *******************************************
+				if (total > 0) {
+					save_score_to_file(nombre, total);
+					printf("\n¡Puntaje %d guardado en el historial de scores!\n", total);
+				} else {
+					printf("\nNo se guarda el puntaje (es 0 o menos).\n");
+				}
+				// *******************************************
 			}
 			else
 			{
@@ -88,6 +123,30 @@ int main(void)
 			else if (tecla_presionada == '\n') {
 				system(CLEAR);
 				math_fast();
+			}
+			else
+			{
+				printf("Opción inválida.\n");
+				esperar_enter();
+			}
+			break;
+	
+			
+	    case '4':		
+			system(CLEAR);
+			printf("\nScores segun usuario\n");
+			printf("\nENTER = continuar");
+			printf("\nv = volver al menú principal");
+			printf("\n-> ");
+			
+			tecla_presionada = leer_tecla();
+			if (tecla_presionada == 'v')
+			{
+				break;
+			}
+			else if (tecla_presionada == '\n') {
+				system(CLEAR);
+				display_leaderboard(); 
 			}
 			else
 			{
