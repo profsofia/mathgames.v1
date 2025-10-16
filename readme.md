@@ -146,3 +146,10 @@ make clean    # Limpiar archivos compilados
 
 Desarrollado como práctica de programación en C,  
 con enfoque en control de tiempo, E/S en consola, programacion modular y logica de juegos.
+
+
+Se está desarrollando para el guardado del score:
+Archivo,Acción,Propósito
+score.h,NUEVO,"Contiene la definición de la estructura UserScore, las constantes y la declaración (prototipo) de las funciones."
+score.c,NUEVO,Contiene la implementación (código) de las funciones save_score_to_file y display_leaderboard.
+main.c,Modificación,"Contiene la función main(), incluye score.h y llama a las funciones de guardar y mostrar el ranking."
