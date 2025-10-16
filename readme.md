@@ -153,3 +153,21 @@ Archivo,Acción,Propósito
 score.h,NUEVO,"Contiene la definición de la estructura UserScore, las constantes y la declaración (prototipo) de las funciones."
 score.c,NUEVO,Contiene la implementación (código) de las funciones save_score_to_file y display_leaderboard.
 main.c,Modificación,"Contiene la función main(), incluye score.h y llama a las funciones de guardar y mostrar el ranking."
+
+
+
+Se desarrollo implementacion de colores...
+
+Se desarrollo implementacion de sonido de exito o de fracaso en otros proy hay que implementar la config para que funcione correctamente.
+#### Configuración del Enlazador (Linker) en Red Panda 
+Este es el paso más importante si usas MinGW/Red Panda. Necesitas decirle al compilador que use la librería winmm.lib que subiste (o, de forma más estándar, usar su flag).
+
+Abre la configuración de tu proyecto en Red Panda (Archivo .dev).
+
+Busca las Linker Options o Bibliotecas Adicionales.
+
+Asegúrate de que la flag -lwinmm esté incluida en las opciones del enlazador.
+
+Si usas el archivo makefile.win que subiste, este ya debería estar configurado. Si usas las opciones del IDE:
+
+Acción en Red Panda: Ve a Project Options -> Compiler Settings -> Linker. En el campo donde se agregan las librerías, añade -lwinmm.

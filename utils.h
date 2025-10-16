@@ -16,4 +16,7 @@
 void limpiar_pantalla(void);
 void configurar_consola(void);
 
+// Prototipos de funciones de audio
+void play_sound_correct(void);
+void play_sound_error(void);
 #endif
