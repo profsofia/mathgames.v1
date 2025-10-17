@@ -50,8 +50,8 @@ utils.o: utils.c utils.h compat.h
 escribir_con_tiempo.o: escribir_con_tiempo.c juegos.h compat.h
 	$(CC) -c "escribir_con_tiempo.c" -o "escribir_con_tiempo.o" $(CFLAGS)  -finput-charset=UTF-8 -fexec-charset=windows-1252
 
-math_run.o: math_run.c juegos.h compat.h
-	$(CC) -c "math_run.c" -o "math_run.o" $(CFLAGS) 
+math_run.o: math_run.c utils.h juegos.h compat.h
+	$(CC) -c "math_run.c" -o "math_run.o" $(CFLAGS)  -finput-charset=UTF-8 -fexec-charset=windows-1252
 
 score.o: score.c score.h utils.h compat.h
 	$(CC) -c "score.c" -o "score.o" $(CFLAGS)  -finput-charset=UTF-8 -fexec-charset=windows-1252

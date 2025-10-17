@@ -56,15 +56,30 @@ int main(void)
 		
 		switch(tecla_presionada)
 		{
+		
+			
 		case '1':
 			system(CLEAR);
-			printf("\nJuego de memoria > se revelaran por unos segundos, los términos individualmente.\n");
-			printf("Tu objetivo > recordar los numeros que se revelaron, para sumarlos y dar con el resultado total.\n");
-			printf("\nENTER = continuar");
-			printf("\nv = volver al menú principal");
+			
+			printf("%s=================================================%s\n", 
+				   ANSI_COLOR_CYAN, ANSI_COLOR_RESET);
+			printf("%s|               M A T H R U N                   |%s\n", 
+				   ANSI_COLOR_GREEN, ANSI_COLOR_RESET);
+			printf("%s=================================================%s\n", 
+				   ANSI_COLOR_CYAN, ANSI_COLOR_RESET);
+			
+			printf("\n%sOBJETIVO:%s Recordar los numeros revelados para sumarlos.\n",
+				   ANSI_COLOR_YELLOW, ANSI_COLOR_RESET);
+			printf("%sREGLAS:%s Se revelaran los terminos individualmente por segundos.\n",
+				   ANSI_COLOR_YELLOW, ANSI_COLOR_RESET);
+			
+			printf("\n-------------------------------------------------\n");
+			printf("\n%sENTER = CONTINUAR%s", ANSI_COLOR_GREEN, ANSI_COLOR_RESET);
+			printf("\n%sv = VOLVER AL MENU PRINCIPAL%s", ANSI_COLOR_RED, ANSI_COLOR_RESET);
 			printf("\n-> ");
 			
 			tecla_presionada = leer_tecla();
+		
 			if (tecla_presionada == 'v')
 			{
 				break;
@@ -80,14 +95,30 @@ int main(void)
 			}
 			break;
 			
+	
+			
 		case '2':
 			system(CLEAR);
-			printf("\nPiensa rápido > trendrás que reslver un ecuación matemática antes de que se acabe el tiempo.\n");
-			printf("\nENTER = continuar");
-			printf("\nv = volver al menú principal");
+			
+			printf("%s=================================================%s\n", 
+				   ANSI_COLOR_CYAN, ANSI_COLOR_RESET);
+			printf("%s|               M A T H J U M P                 |%s\n", 
+				   ANSI_COLOR_GREEN, ANSI_COLOR_RESET);
+			printf("%s=================================================%s\n", 
+				   ANSI_COLOR_CYAN, ANSI_COLOR_RESET);
+			
+			printf("\n%sOBJETIVO:%s Resolver la ecuacion antes de que el tiempo termine.\n",
+				   ANSI_COLOR_YELLOW, ANSI_COLOR_RESET);
+			printf("%sPUNTAJE:%s Cada acierto vale 5 puntos.\n",
+				   ANSI_COLOR_YELLOW, ANSI_COLOR_RESET);
+			
+			printf("\n-------------------------------------------------\n");
+			printf("\n%sENTER = CONTINUAR%s", ANSI_COLOR_GREEN, ANSI_COLOR_RESET);
+			printf("\n%sv = VOLVER AL MENU PRINCIPAL%s", ANSI_COLOR_RED, ANSI_COLOR_RESET);
 			printf("\n-> ");
 			
 			tecla_presionada = leer_tecla();
+
 			if (tecla_presionada == 'v')
 			{
 				break;
@@ -97,16 +128,16 @@ int main(void)
 
 			else if (tecla_presionada == '\n') {
 				system(CLEAR);
-				math_jump(resultado_total); // Esta función actualiza 'total'
+				math_jump(resultado_total); 
 				escribir_con_tiempo(total);
 				
 				if (total > 0) {
 					save_score_to_file(nombre, total);
-					// Usamos color cian para el mensaje de éxito
+				
 					printf("\n%s¡Puntaje %d guardado en el historial de scores!%s\n", 
 						   ANSI_COLOR_CYAN, total, ANSI_COLOR_RESET);
 				} else {
-					// Usamos color rojo para el mensaje de error/puntuación nula
+					
 					printf("\n%sNo se guarda el puntaje (es 0 o menos).%s\n", 
 						   ANSI_COLOR_RED, ANSI_COLOR_RESET);
 				}
@@ -118,14 +149,29 @@ int main(void)
 			}
 			break;
 			
+			
 		case '3':
 			system(CLEAR);
-			printf("\nCalculo veloz > Tendras que resolver la mayor cantidad de ejercicios simples en la menor cantidad de tiempo posible.\n");
-			printf("\nENTER = continuar");
-			printf("\nv = volver al menú principal");
+			
+			printf("%s=================================================%s\n", 
+				   ANSI_COLOR_CYAN, ANSI_COLOR_RESET);
+			printf("%s|               M A T H F A S T                 |%s\n", 
+				   ANSI_COLOR_GREEN, ANSI_COLOR_RESET);
+			printf("%s=================================================%s\n", 
+				   ANSI_COLOR_CYAN, ANSI_COLOR_RESET);
+			
+			printf("\n%sOBJETIVO:%s Resolver la mayor cantidad de ejercicios posible.\n",
+				   ANSI_COLOR_YELLOW, ANSI_COLOR_RESET);
+			printf("%sREGLAS:%s El juego termina al fallar o acabarse el tiempo limite.\n",
+				   ANSI_COLOR_YELLOW, ANSI_COLOR_RESET);
+			
+			printf("\n-------------------------------------------------\n");
+			printf("\n%sENTER = CONTINUAR%s", ANSI_COLOR_GREEN, ANSI_COLOR_RESET);
+			printf("\n%sv = VOLVER AL MENU PRINCIPAL%s", ANSI_COLOR_RED, ANSI_COLOR_RESET);
 			printf("\n-> ");
 			
 			tecla_presionada = leer_tecla();
+
 			if (tecla_presionada == 'v')
 			{
 				break;
