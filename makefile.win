@@ -39,7 +39,7 @@ main.o: main.c score.h menu.h utils.h juegos.h compat.h
 	$(CC) -c "main.c" -o "main.o" $(CFLAGS)  -finput-charset=UTF-8 -fexec-charset=windows-1252
 
 menu.o: menu.c menu.h utils.h compat.h
-	$(CC) -c "menu.c" -o "menu.o" $(CFLAGS)  -finput-charset=UTF-8 -fexec-charset=windows-1252
+	$(CC) -c "menu.c" -o "menu.o" $(CFLAGS) 
 
 compat.o: compat.c compat.h
 	$(CC) -c "compat.c" -o "compat.o" $(CFLAGS)  -finput-charset=UTF-8 -fexec-charset=windows-1252

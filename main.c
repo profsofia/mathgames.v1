@@ -16,16 +16,26 @@ int main(void)
 	short *resultado_total = &total;
 	//char tecla_presionada;
 	char tecla_presionada = '\0';
-	
-
 	char nombre_jugador[21];
 	char *nombre = nombre_jugador;
-	
-	printf("==========================================\n");
-	printf("         ¡BIENVENIDO A MATH GAMES!        \n");
-	printf("==========================================\n");
-	printf("Ingresá tu nombre de usuario (20 caracteres max): ");
 
+	system(CLEAR); // Limpiamos la pantalla al inicio para mayor impacto
+	
+	printf("%s=================================================%s\n", 
+		   ANSI_COLOR_BLUE, ANSI_COLOR_RESET);
+	
+	printf("%s|                MATH GAMES V1.0              |%s\n", 
+		   ANSI_COLOR_CYAN, ANSI_COLOR_RESET);
+	
+	printf("%s=================================================%s\n", 
+		   ANSI_COLOR_BLUE, ANSI_COLOR_RESET);
+	
+	printf("\n");
+	printf("%s>>> Pone a prueba tu velocidad mental y tus calculos! <<<%s\n",
+		   ANSI_COLOR_YELLOW, ANSI_COLOR_RESET);
+	
+	printf("\n-------------------------------------------------\n");
+	printf("Ingresa tu nombre de usuario (20 caracteres max): ");
 
 	if (fgets(nombre_jugador, sizeof(nombre_jugador), stdin) != NULL) {
 		// Eliminar el salto de línea que agrega fgets 
@@ -82,7 +92,7 @@ int main(void)
 			{
 				break;
 			}
-			// main.c (dentro de case '2')
+	
 			
 
 			else if (tecla_presionada == '\n') {
@@ -100,7 +110,6 @@ int main(void)
 					printf("\n%sNo se guarda el puntaje (es 0 o menos).%s\n", 
 						   ANSI_COLOR_RED, ANSI_COLOR_RESET);
 				}
-				// *******************************************
 			}
 			else
 			{

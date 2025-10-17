@@ -1,26 +1,32 @@
-#include "./menu.h"
-#include "./utils.h"
-void menu_principal(char *nombre)
 
+
+#include "./menu.h"
+#include "./utils.h" 
+
+void menu_principal(char *nombre)
 {
 	system(CLEAR);
-	// Usamos el color verde para el nombre y luego el RESET
-	printf("\n\n\t ### Bienvenido -> %s%s%s <- ### \n\n", ANSI_COLOR_GREEN, nombre, ANSI_COLOR_RESET);
+	printf("\n%s===========================================================%s\n", 
+		   ANSI_COLOR_BLUE, ANSI_COLOR_RESET);
 	
-	printf("===========================================================\n\n");
-	printf("1 = MathRun   ->  Memorizá y sumá\n");
-	printf("2 = MathJump  ->  Resolvé antes de que se acabe el tiemmpo\n");
-	printf("3 = MathFast  ->  Resolvé la mayor cantidad posible\n");
+	printf("\n\t %s[ BIENVENIDO -> %s <- ]%s \n\n", 
+		   ANSI_COLOR_YELLOW, nombre, ANSI_COLOR_RESET);
 	
-	// *************************************************************
-	// NUEVA LÍNEA: Agregar la opción 4 para ver el ranking
-	// *************************************************************
-	printf("4 = Ver Ranking -> Muestra la tabla de los mejores puntajes\n");
-	// *************************************************************
+	printf("%s===========================================================%s\n\n", 
+		   ANSI_COLOR_BLUE, ANSI_COLOR_RESET);
+	
+
+	printf(" %s1 = MathRun%s   ->  Memoriza y suma\n", ANSI_COLOR_CYAN, ANSI_COLOR_RESET);
+	printf(" %s2 = MathJump%s  ->  Resuelve antes de que se acabe el tiempo\n", ANSI_COLOR_CYAN, ANSI_COLOR_RESET);
+	printf(" %s3 = MathFast%s  ->  Resuelve la mayor cantidad posible\n", ANSI_COLOR_CYAN, ANSI_COLOR_RESET);
+	
+	printf("\n %s4 = Ranking%s   ->  Muestra la tabla de los mejores puntajes\n", ANSI_COLOR_MAGENTA, ANSI_COLOR_RESET);
 	
 	printf("-----------------------------------------------------------\n");
-	printf("\t\tx = Terminar juego\n\n");
+
+	printf(" %sx = Salir%s     ->  Terminar juego\n\n", ANSI_COLOR_RED, ANSI_COLOR_RESET);
+	
 	printf("===========================================================\n");
-	printf("\nSeleccione una opcion -> ");
+	printf("%s\nSelecciona una opcion -> %s", ANSI_COLOR_YELLOW, ANSI_COLOR_RESET);
 	
 }

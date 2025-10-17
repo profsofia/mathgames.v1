@@ -5,3 +5,4 @@ carlos 69
 juana 37
 jamaica 4
 sofia 15
+sofia 10
