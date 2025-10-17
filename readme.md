@@ -134,13 +134,13 @@ make clean    # Limpiar archivos compilados
 
 ## PROXIMAS MEJORAS PLANEADAS
 
-- Guardar puntajes en archivo binario
-- Crear historial por jugador  
-- Implementar niveles de dificultad progresiva
-- Agregar sistema de ranking o top 10
-- Mostrar resultados con colores en consola
-- Mas juegos matematicos: porcentajes, logica, acertijos
-- Sistema de registro de usuarios persistente
+- Guardar puntajes en archivo binario Listo!!!
+- Crear historial por jugador  Listooo!!!!
+- Implementar niveles de dificultad progresiva <<<<-----Aun por hacer!!!!
+- Agregar sistema de ranking o top 10 Listoooo!!!
+- Mostrar resultados con colores en consola Listoooo!!!!!
+- Mas juegos matematicos: porcentajes, logica, acertijos <<<<-----Aun por hacer!!!!
+- Sistema de registro de usuarios persistente Listoooo!!!!!
 
 ---
 
