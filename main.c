@@ -123,7 +123,7 @@ int main(void)
 			}
 			else if (tecla_presionada == '\n') {
 				system(CLEAR);
-				math_fast();
+				math_fast(nombre); 
 			}
 			else
 			{

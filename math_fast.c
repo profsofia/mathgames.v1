@@ -1,16 +1,13 @@
 #include "./juegos.h"
-#include "./utils.h" // Asegúrate de que esta inclusión esté aquí y sea correcta
-#include <time.h>    // Necesario para time()
+#include "./utils.h" 
+#include "./score.h"
+#include <time.h> 
 
-// Asumo que TIEMPO y _kbhit() están definidos/disponibles
-// Asumo que ANSI_COLOR_XXX y play_sound_XXX están en utils.h/utils.c
-
-void math_fast(void)
+void math_fast(const char *nombre)
 {
 	short aciertos = 0;
 	short termino1, termino2, respuesta_jugador;
 	short total = 0;
-	// Debes tener TIEMPO definido en un header o aquí
 	short tiempo_restante = TIEMPO; 
 	short tiempo_recorrido;
 	short se_ingreso_respuesta = 0;
@@ -54,15 +51,12 @@ void math_fast(void)
 			}
 		}
 		
-		// **********************************************
-		// LÓGICA DE VALIDACIÓN CON AUDIO Y COLORES
-		// **********************************************
+	
 		if (se_ingreso_respuesta)
 		{
 			if (tiempo_restante <= 0)
 			{
 				printf("\n%sSe acabo el tiempo..%s", ANSI_COLOR_RED, ANSI_COLOR_RESET);
-				// 🔊 SONIDO DE ERROR / FIN DE JUEGO
 				play_sound_error(); 
 				break;
 			}
@@ -75,15 +69,13 @@ void math_fast(void)
 				// Acierto
 				aciertos++;
 				printf("\n%s¡Acierto!%s", ANSI_COLOR_GREEN, ANSI_COLOR_RESET);
-				// 🔊 SONIDO DE ÉXITO
+		
 				play_sound_correct(); 
 			}
 			else
 			{
-				// Error
 				printf("\n%sResultado incorrecto, era -> %hd%s\n", 
 					   ANSI_COLOR_RED, total, ANSI_COLOR_RESET);
-				// 🔊 SONIDO DE ERROR
 				play_sound_error(); 
 				break;
 			}
@@ -91,14 +83,25 @@ void math_fast(void)
 		else
 		{
 			printf("\n%sSe acabo el tiempo..%s", ANSI_COLOR_RED, ANSI_COLOR_RESET);
-			// 🔊 SONIDO DE ERROR / FIN DE JUEGO
 			play_sound_error(); 
 			break;
 		}
-		// **********************************************
 	}
-	printf("\n\n%s-----------------------------------------------------%s", 
-		   ANSI_COLOR_BLUE, ANSI_COLOR_RESET);
+	
+	printf("\n\n%s-----------------------------------------------------%s", ANSI_COLOR_BLUE, ANSI_COLOR_RESET);
+	
 	printf("\nTotal de aciertos: %s%hd%s\n", ANSI_COLOR_GREEN, aciertos, ANSI_COLOR_RESET);
+	
+	short puntaje_final = aciertos * 5; 
+
+	
+	printf("Puntaje total (%d puntos por acierto): %s%hd%s\n",5 , ANSI_COLOR_YELLOW, puntaje_final, ANSI_COLOR_RESET);
+
+	if (puntaje_final > 0) {
+		save_score_to_file(nombre, puntaje_final);
+		printf("\n%s¡Puntaje %hd guardado en el Ranking!%s\n", ANSI_COLOR_CYAN, puntaje_final, ANSI_COLOR_RESET);
+	} else {
+		printf("\nNo se guarda el puntaje (es 0).\n");
+	}
 	esperar_enter();
 }

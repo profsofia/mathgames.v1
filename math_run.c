@@ -28,6 +28,7 @@ void math_run(void)
 	if (respuesta_jugador == total)
 	{
 		printf("\n%hd es CORRECTO\n", respuesta_jugador);
+		
 	}
 	else
 	{

@@ -29,7 +29,7 @@ mathgames.exe: $(OBJ)
 
 	$(CC) $(LINKOBJ) -o "mathgames.exe" $(LIBS)
 
-math_fast.o: math_fast.c utils.h juegos.h compat.h
+math_fast.o: math_fast.c score.h utils.h juegos.h compat.h
 	$(CC) -c "math_fast.c" -o "math_fast.o" $(CFLAGS)  -finput-charset=UTF-8 -fexec-charset=windows-1252
 
 math_jump.o: math_jump.c juegos.h compat.h
@@ -51,7 +51,7 @@ escribir_con_tiempo.o: escribir_con_tiempo.c juegos.h compat.h
 	$(CC) -c "escribir_con_tiempo.c" -o "escribir_con_tiempo.o" $(CFLAGS)  -finput-charset=UTF-8 -fexec-charset=windows-1252
 
 math_run.o: math_run.c juegos.h compat.h
-	$(CC) -c "math_run.c" -o "math_run.o" $(CFLAGS)  -finput-charset=UTF-8 -fexec-charset=windows-1252
+	$(CC) -c "math_run.c" -o "math_run.o" $(CFLAGS) 
 
 score.o: score.c score.h utils.h compat.h
 	$(CC) -c "score.c" -o "score.o" $(CFLAGS)  -finput-charset=UTF-8 -fexec-charset=windows-1252
