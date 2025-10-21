@@ -17,5 +17,6 @@ void math_jump(short *resultado_total)
 	
 	printf("\n#1 --> ( %hd ) + ( %hd ) + ( %hd )\n", termino1, termino2, termino3);
 	
+	
 	*resultado_total = total;
 }
